@@ -33,6 +33,8 @@ public class ThreadDownload  extends Thread {
         ThreadDownload t2 = new ThreadDownload("https://i3.read01.com/dnKcwsuDlZJr4mDngXzmVn8/0.jpg", "t2.jpg");
         ThreadDownload t3 = new ThreadDownload("https://i3.read01.com/Se5vFXrNnTDIZUuBkoRGu0w/0.jpg", "t3.jpg");
 
+        // 繼承 Thread 類別，要實現 run method，並且要調用時必須呼叫 start() method
+        // 參考 https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Thread.html
         t1.start();
         t2.start();
         t3.start();
