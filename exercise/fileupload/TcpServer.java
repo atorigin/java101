@@ -16,7 +16,7 @@ public class TcpServer {
         FileOutputStream fos = new FileOutputStream(new File("recieved.png"));
         byte[] buffer = new byte[1024];
         int len;
-        while ((len=is.read()) != -1) {
+        while ((len=is.read(buffer)) != -1) {
             fos.write(buffer,0,len);
         }
 
