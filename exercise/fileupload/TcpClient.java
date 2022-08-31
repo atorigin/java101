@@ -25,6 +25,10 @@ public class TcpClient {
             os.write(buffer,0,len);
         }
 
+        // 傳送完 , 通知 server 已經 output 完了
+        // API 說明 : Disables the output stream for this socket.
+        socket.shutdownOutput();
+
         // 結束要關閉 stream
         os.close();
         fis.close();
