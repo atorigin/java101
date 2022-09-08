@@ -2,7 +2,7 @@
 主要記錄一下學習 Java 過程參考過的文件及資源
 
 # 自己綜合收集網路上文章後的 Java 學習路線
-Java SE -> Java Collection -> Java 泛型 -> Java Stream -> Java EE Servelet & JSP (概念理解) -> Spring -> Spring MVC -> Spring boot
+Java SE -> Java Collection -> Java 泛型 -> Java io -> Java EE Servelet & JSP (概念理解) -> Spring -> Spring MVC -> Spring boot
 
 # 參考文件
 - Spring in action [v6-english](https://livebook.manning.com/book/spring-in-action-sixth-edition/chapter-1/v-7/)
