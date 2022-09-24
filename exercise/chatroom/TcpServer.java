@@ -17,7 +17,7 @@ public class TcpServer {
 
             // 4. 建立一個存放 client 資料的 container
             ByteArrayOutputStream baos = new ByteArrayOutputStream();
-            // 這邊是製作一個 1024 長度的資料，但若接收 client 端資料長度大過 1024 就會有亂碼(資料不完整)
+            // 這邊是製作一個 1024 長度的資料容器，但若接收 client 端資料長度大過 1024 就會有亂碼(資料不完整)
             byte[] buffer = new byte[1024];
             int len;
             // 這邊透過 while 邊接邊寫到 baos
