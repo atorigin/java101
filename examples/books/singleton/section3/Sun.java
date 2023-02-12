@@ -10,7 +10,7 @@ public class Sun {
     private Sun() {}
 
     // allow access sun instance from other class
-    public Sun getInstance() {
+    public static Sun getInstance() {
         if(sun == null) {
             synchronized(Sun.class) { // locking the block to avoid multi-thread want getInstance on same time
                 if(sun == null) { // double-check locking 雙重鎖
@@ -19,5 +19,13 @@ public class Sun {
             }
         }
         return sun;
+    }
+    public static void main(String[] args) {
+        Sun mySun = Sun.getInstance();
+        Sun mySun2 = Sun.getInstance();
+
+        if(mySun.equals(mySun2)) {
+            System.out.println("Same sun!");
+        }
     }
 }
